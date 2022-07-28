@@ -1,0 +1,154 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #66BFBF;
+  font-size: 90px;
+  margin: 0;
+  margin-top: 50px;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  line-height: 2;
+  font-weight: bold;
+  color: #66BFBF;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+a {
+  color: #11999E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+p {
+  color: #40514E;
+  line-height: 2;
+  font-weight: bold;
+}
+
+hr {
+  color: #EAF6F6;
+  border: none;
+  border-top: 10px dotted;
+  width: 7%;
+}
+
+.profile {
+  width: 25%;
+  margin: 50px auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.skillbb {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.skillgt {
+width: 25%;
+  float: right;
+  margin-left: 30px;
+  }
+
+.top-cloud {
+  position: absolute;
+  right: 350px;
+  top: 100px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 400px;
+  left: 350px;
+}
+
+.top {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.BUTTON_JTH {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+  background-color: #66BFBF;
+  text-shadow: 1px 1px 20px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.BUTTON_JTH:hover {
+  background: #7FF7E0;
+  border: solid #FFFFFF 1px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.contact-me {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-para {
+  width: 40%;
+  margin: 50px auto 0;
+}
+
+.middle-container {}
+
+.bottom-container {
+  margin-top: 50px;
+  background-color: #66BFBF;
+  height: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.end-card {
+  color: #EAF6F6;
+  font-size:14px;
+
+}
+
+.footer-link {
+  display: inline-block;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  width: 100px;
+}
