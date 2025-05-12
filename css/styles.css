@@ -152,3 +152,9 @@ width: 25%;
   margin-bottom: 25px;
   width: 100px;
 }
+
+.gradient-overlay {
+  width: 100%;
+ height: 100%;
+  mask-image: radial-gradient(ellipse at center, black 70%, transparent 90%);
+ }
