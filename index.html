@@ -6,169 +6,19 @@
     <title>Your Name - Portfolio</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        /* Minimalist CSS Variables */
-        :root {
-            --bg-color: #fdfdfd;
-            --text-color: #1a1a1a;
-            --secondary-text: #555555;
-            --border-color: #e5e5e5;
-        }
-
-        /* Base Typography and Reset */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: center;
-            padding: 2.5rem 0;
-            gap: 2.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--secondary-text);
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-        }
-
-        nav a.active, nav a:hover {
-            color: var(--text-color);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 6rem 2rem;
-            text-align: center;
-        }
-
-        /* Hero Section Styling */
-        .hero h1 {
-            font-size: 3rem;
-            margin: 0 0 0.5rem 0;
-            letter-spacing: -0.03em;
-            font-weight: 700;
-        }
-
-        .hero h2 {
-            font-size: 1.25rem;
-            font-weight: 400;
-            color: var(--secondary-text);
-            margin: 0 0 1.5rem 0;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--secondary-text);
-            margin: 0 auto 3rem auto;
-            max-width: 600px;
-        }
-
-        /* Social Links */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem; /* Space between icon and text */
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            font-size: 0.95rem;
-            position: relative;
-        }
-
-        /* Customizing the hover underline so it ignores the icon and only underlines the text if preferred, 
-           but here we underline the whole block for a clean look */
-        .social-links a::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 1px;
-            bottom: -4px;
-            left: 0;
-            background-color: var(--text-color);
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-        }
-
-        .social-links a:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
-        .social-links i {
-            font-size: 1.1rem; /* Makes the icons slightly larger than the text */
-        }
-
-        /* Resume Button */
-        .btn-resume {
-            display: inline-block;
-            padding: 0.8rem 1.8rem;
-            background-color: transparent;
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            border: 1px solid var(--text-color);
-            border-radius: 4px;
-            transition: all 0.2s ease;
-        }
-
-        .btn-resume:hover {
-            background-color: var(--text-color);
-            color: var(--bg-color);
-        }
-        /* Profile Picture (Home Page) */
-        .profile-pic {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1.5rem;
-            /* Optional: adds a very soft, elegant shadow */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: auto; /* Pushes footer to the bottom if content is short */
-            border-top: 1px solid var(--border-color);
-            color: var(--secondary-text);
-            font-size: 0.85rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="experience.html">Experience</a>
-    </nav>
+        <div class="nav-brand"></div> <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <!-- <a href="projects.html">Projects</a> -->
+            <a href="publications.html">Publications</a>
+            <!-- <a href="experience.html">Experience</a> -->
+        </div>
+        
+        <div></div> </nav>
 
     <div class="container">
         <section class="hero">
@@ -193,7 +43,7 @@
                 </a>
             </div>
 
-            <a href="resume.pdf" class="btn-resume" download>Download Resume</a>
+            <a href="Vikram-Shenoy-Resume.pdf" class="btn-resume" download>Download Resume</a>
         </section>
     </div>
 
