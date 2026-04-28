@@ -117,6 +117,7 @@ nav {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
 }
 
@@ -290,4 +291,185 @@ footer {
         height: auto;
         aspect-ratio: 16 / 9;
     }
+}
+/* =========================================
+   8. Experience Page Specific Styles
+   ========================================= */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-card {
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    border-color: transparent; /* Optional: hides the border on hover for a cleaner shadow look */
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 1rem;
+}
+
+.experience-company {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.experience-location {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+}
+
+.role-group {
+    margin-bottom: 2rem;
+}
+
+.role-group:last-child {
+    margin-bottom: 0;
+}
+
+.experience-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0 0 0.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-date {
+    font-size: 0.85rem;
+    color: var(--secondary-text);
+    font-weight: 400;
+}
+
+.experience-card ul {
+    margin: 0.75rem 0 0 0;
+    padding-left: 1.25rem;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.experience-card li {
+    margin-bottom: 0.6rem;
+}
+
+.experience-card li:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile Adjustments for Experience */
+@media (max-width: 600px) {
+    .experience-header, .experience-role {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    .experience-card {
+        padding: 1.5rem;
+    }
+}
+/* =========================================
+   9. Projects Page Specific Styles
+   ========================================= */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    border-color: transparent;
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #f0f0f0; /* Fallback for empty images */
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border-color);
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: var(--text-color);
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin: 0 0 1rem 0;
+    flex-grow: 1; /* Pushes the bottom elements down if descriptions vary in length */
+}
+
+.project-achievement {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    margin: 0 0 1.25rem 0;
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--text-color);
+}
+
+.project-tech-stack {
+    margin-bottom: 1.25rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    background-color: #f5f5f5;
+    color: var(--secondary-text);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin: 0 0.4rem 0.4rem 0;
+    border: 1px solid #e0e0e0;
+}
+
+.project-link {
+    align-self: flex-start;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 1px;
+    transition: opacity 0.2s ease;
+}
+
+.project-link:hover {
+    opacity: 0.7;
 }
